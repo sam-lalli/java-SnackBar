@@ -35,12 +35,12 @@ public class Customer {
         this.name = name;
     }
 
-    public void addCash(double cashOnHand, double cash){
-        this.cashOnHand = cashOnHand + cash
+    public void addCash(double cash){
+        this.cashOnHand = this.cashOnHand + cash;
     }
 
-    public void buySnacks(double cost, double cashOnHand) {
-        this.cashOnHand = cashOnHand - cost
+    public void buySnacks(double cost, double ammount) {
+        this.cashOnHand = this.cashOnHand - (cost * ammount);
     }
 
 }

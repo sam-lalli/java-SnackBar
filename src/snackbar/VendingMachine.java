@@ -1,4 +1,4 @@
-pacakge snackbar
+package snackbar;
 
 public class VendingMachine{
     private static int maxId = 0;

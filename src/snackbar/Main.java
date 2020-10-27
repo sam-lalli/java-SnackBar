@@ -17,8 +17,65 @@ public class Main {
 
         Snack soda = new Snack("Soda", 24, 2.50, "drink");
         Snack water = new Snack("Water", 20, 2.75, "drink");
+
+        //Processing
+        
+        // Customer 1 (Jane) buys 3 of snack 4 (Soda).
+        // Print Customer 1 (Jane) Cash on hand.
+        // Print quantity of snack 4 (Soda).
+        c1.buySnacks(2.50, 3);
+        soda.buySnack(3);
+        System.out.println(c1.getCashOnHand());
+        System.out.println(soda.getQuantity());
+
+        // Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
+        // Print Customer 1 (Jane) Cash on hand.
+        // Print quantity of snack 3 (Pretzel).
+        c1.buySnacks(2.00, 1);
+        pretzel.buySnack(1);
+        System.out.println(c1.getCashOnHand());
+        System.out.println(pretzel.getQuantity());
+
+        // Customer 2 (Bob) buys 2 of snack 4 (Soda).
+        // Print Customer 2 (Bob) Cash on Hand.
+        // Print quantity of snack 4 (Soda).
+        c2.buySnacks(2.50, 2);
+        soda.buySnack(2);
+        System.out.println(c2.getCashOnHand());
+        System.out.println(soda.getQuantity());
+
+        // Customer 1 (Jane) finds $10.
+        // Print Customer 1 (Jane) Cash on Hand.
+        c1.addCash(10.00);
+        System.out.println(c1.getCashOnHand());
+
+        // Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
+        // Print Customer 1 (Jane) Cash on Hand.
+        // Print quantity of snack 2 (Chocolate Bar).
+        c1.buySnacks(1.00, 1);
+        cBar.buySnack(1);
+        System.out.println(c1.getCashOnHand());
+        System.out.println(cBar.getQuantity());
+
+        // Add 12 more items to snack 3 (Pretzel).
+        // Print quantity of snack 3 (Pretzel).
+        pretzel.addQuantity(12);
+        System.out.println(pretzel.getQuantity());
+
+        // Customer 2 (Bob) buys 3 of snack 3 (Pretzel).
+        // Print Customer 2 (Bob) Cash on hand.
+        // Print quantity of snack 3 (Pretzel).
+        c2.buySnacks(2.00, 3);
+        pretzel.buySnack(3);
+        System.out.println(c2.getCashOnHand());
+        System.out.println(pretzel.getQuantity());
+
+
     }
 }
+
+
+
 
 // * [ ] Instantiate 5 snacks
 //   * [ ] In Vending Machine Food

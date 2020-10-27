@@ -60,11 +60,24 @@ public class Snack {
         this.vendingMachineId = vendingMachineId;
     }
 
-    public void setQuantity(int quantity, int num) {
-        this.quantity = quantity + num;
+    public void addQuantity(int num) {
+        this.quantity = this.quantity + num;
     }
 
-    public void buySnack(Snack, int num) {
-        this.Snack = Snack.quantity - num;
+    public void buySnack(int num) {
+        this.quantity = this.quantity - num;
     }
+
+
+    //     @Override
+    // public String toString() {
+    //     String rtnStr = "id: " + id + "\n" +
+    //     "fname: " + fname + "\n" +
+    //     "lname: " + lname + "\n" +
+    //     "salary: " + salary + "\n" +
+    //     "has401k: " + has401k + "\n" +
+    //     "companyId: " + companyId + "\n" +
+    //     "healthPlanId: " + healthPlanId;
+    //     return rtnStr;
+    // }
 }
